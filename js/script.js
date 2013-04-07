@@ -13,7 +13,7 @@ if (!contentEditableSupport) {
 var images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png'];
 for (var i = 0; i < images.length; i++) {
   var img = new Image();
-  img.src = "avatares/" + images[i];
+  img.src = "img/avatares/" + images[i];
 }
 
 function randimg(thing) {
@@ -22,7 +22,7 @@ function randimg(thing) {
   console.log(ran);
   console.log(thing);
   $(".img." + thing).css({
-    'background-image': 'url(avatares/' + ran + ')'
+    'background-image': 'url(img/avatares/' + ran + ')'
   });
 }
 

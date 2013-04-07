@@ -2,7 +2,7 @@ body * { margin: 0; padding: 0; }
 body {
     font: 13px/1.231 arial,helvetica,clean,sans-serif;
     color: #333;
-    background-image: url('debut_light.png');
+    background-image: url('../img/debut_light.png');
 }
 .table{
   display: table;
@@ -89,10 +89,10 @@ a {
     height: 48px;
 }
 .img.av1 {
-  background-image: url(avatares/1.png);
+  background-image: url(../img/avatares/1.png);
 }
 .img.av2 {
-  background-image: url(avatares/2.png);
+  background-image: url(../img/avatares/2.png);
 }
 .avatar p {
     display: block;
