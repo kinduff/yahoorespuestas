@@ -31,9 +31,19 @@ $(".img.av1,.img.av2").on("click", function() {
   randimg(thingy);
 });
 
-$("#descargar").click(function(e) {
+$(".descargar").click(function(e) {
   e.preventDefault();
-  html2canvas($("#bigmike"), {
+  var download_element;
+
+  if ($(this).hasClass("pregunta"))
+  {
+    download_element = $("#yahoo");
+  }
+  else
+  {
+    download_element = $("#bigmike");
+  }
+  html2canvas(download_element, {
     onrendered: function(canvas) {
       datauri = canvas.toDataURL("image/png");
       $("input#data").val(datauri);
