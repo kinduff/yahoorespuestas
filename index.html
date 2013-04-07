@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset = "utf-8">
+  <title>Generador de Yahoo! Respuestas</title>
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Generador de Yahoo! Respuestas" />
+  <meta property="og:description" content="Generador de meme Yahoo! Respuestas online." />
+  <meta property="og:url" content="http://abarcarodriguez.com/yahoorespuestas/" />
+  <meta property="og:image" content="http://abarcarodriguez.com/yahoorespuestas/logo.jpg" />
+  <meta name="description" content="Generador de meme Yahoo! Respuestas online." />
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <h1>Generador de Yahoo! Respuestas</h1>
+    <p class="notice1">Casi todo el contenido es editable. Para rotar los avatares haz click sobre él.</p>
+    <div id="social">
+      <a href="#"><div class="fb-like" data-href="http://abarcarodriguez.com/yahoorespuestas/" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div></a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://abarcarodriguez.com/yahoorespuestas/" data-text="Generador de Yahoo! Respuestas" data-via="kinduff" data-lang="es" data-related="kinduff">Twittear</a>
+    </div>
+    <div id="bigmike">
+        <div id="yahoo">
+            <div class="table full pregunta">
+                <div class="tcell t15 avatar">
+                    <div class="border"><div class="img av1"></div></div>
+                    <p><a href="#" contenteditable="true">Usuario</a></p>
+                </div>
+                <div class="tcell t85 content">
+                    <div class="table full headtop">
+                        <div class="tcell t50">
+                            <h2>Pregunta resuelta</h2>
+                        </div>
+                        <div class="tcell t50 right">
+                            <a href="#">Muéstrame otra »</a>
+                        </div>
+                    </div>
+                    <h2 class="pregunta" contenteditable="true">Clic aquí para editar pregunta</h2>
+                    <p contenteditable="true">Clic aquí para editar detalles de pregunta.<br /><br />
+                    Editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame.
+    </p>
+                <ul class="meta">
+                  <li contenteditable="true">hace 3 horas - 4 días quedan para responder.</li>
+                  <li class="report-abuse">  
+                      <a href="#"><span class="report-link">Reportar abusos</span></a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div id="respuesta">
+            <div class="table full respuesta">
+                <div class="tcell t15 avatar">
+                    <div class="border"><div class="img av2"></div></div>
+                    <p><a href="#" contenteditable="true">Usuario 2</a></p>
+                </div>
+                <div class="tcell t85 content">
+                    <div class="headtop">
+                        <h2>Mejor respuesta<span> - elegida por los votantes</span></h2>
+                    </div>
+                    <p contenteditable="true">
+                        Clic aquí para editar respuesta.
+                        <br /><br />Editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame.
+                        <br /><br />
+                        Editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame editame.</p>
+                    <h3>Fuente(s):</h3>
+                    <p contenteditable="true">Clic aquí para agregar fuentes.</p>
+                <ul class="meta">
+                  <li contenteditable="true">hace 3 horas</li>
+                  <li class="report-abuse">  
+                      <a href="#"><span class="report-link">Reportar abusos</span></a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <button id="descargar">Descargar imagen</button>
+    <form id="form" method="post" action="process.php">
+      <input type="hidden" id="data" name="data" />
+    </form>
+    <div id="image">
+    </div>
+    <div id="fb-root"></div>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34099371-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="html2canvas.js"></script>
+    <script type="text/javascript" src="canvas2image.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
